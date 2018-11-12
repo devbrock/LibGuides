@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LibGuides Application</title>
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Mississippi State Univerisity LibGuides Search</h1>
+        <input type="text" id="searchfor"> <br>
+        <button id="search" class="btn btn-primary"> Search </button>
+        <button id="clear" class="btn btn-danger"> Clear Search </button>
+        <button id="reset" class="btn btn-warning"> Reset Dates </button>
+        <label for="begdate">Beginning Date:</label>
+        <input type="date" id="begdate">
+        <label for="enddate">Ending Date:</label>
+        <input type="date" id="enddate">
+        <select class="button-group" id="sortby">
+            <option> Sort by...</option>
+            <option value="name"> Name </option>
+            <option value="count_hit"> Hits </option>
+            <option value="published"> Publish Date</option>
+            <option value="relevance"> Relevance </option>
+        </select>
+        <div id="numres"></div>
+        <div id="output"></div>
+    </div> 
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+<footer class="center">
+    <h6>Copyright (c) 2018 Brock Balducci. All rights reserved.</h6>
+</footer>
+</html>
