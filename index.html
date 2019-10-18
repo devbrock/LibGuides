@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LibGuides Application</title>
-    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1>Mississippi State Univerisity LibGuides Search</h1>
-        <input type="text" id="searchfor"> <br>
-        <button id="search" class="btn btn-primary"> Search </button>
-        <button id="clear" class="btn btn-danger"> Clear Search </button>
-        <button id="reset" class="btn btn-warning"> Reset Dates </button>
-        <label for="begdate">Beginning Date:</label>
-        <input type="date" id="begdate">
-        <label for="enddate">Ending Date:</label>
-        <input type="date" id="enddate">
-        <select class="button-group" id="sortby">
-            <option> Sort by...</option>
-            <option value="name"> Name </option>
-            <option value="count_hit"> Hits </option>
-            <option value="published"> Publish Date</option>
-            <option value="relevance"> Relevance </option>
-        </select>
-        <div id="numres"></div>
-        <div id="output"></div>
-    </div> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>LibGuides Application</title>
+		<!-- <link
+			href="https://bootswatch.com/4/lux/bootstrap.min.css"
+			rel="stylesheet"
+			type="text/css"
+        /> -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center my-4">
+				Mississippi State Univerisity LibGuides Search
+			</h1>
+			<div class="form-inline">
+				<input
+					type="text"
+					id="searchfor"
+					class="form-control mb-2 w-100"
+					placeholder="Start searching..."
+				/>
+				<button id="search" class="btn btn-primary mr-2">Search</button>
+				<button id="clear" class="btn btn-danger mr-2">Clear Search</button>
+				<button id="reset" class="btn btn-warning mr-2">Reset Dates</button>
+				<label for="begdate" class="mr-2">Beginning Date:</label>
+				<input
+					type="date"
+					id="begdate"
+					class="form-control custom-input mr-2"
+				/>
+				<label for="enddate" class="mr-2">Ending Date:</label>
+				<input
+					type="date"
+					id="enddate"
+					class="form-control custom-input mr-2"
+				/>
+				<select class="custom-select custom-input mr-2" id="sortby">
+					<option> Sort by...</option>
+					<option value="name"> Name </option>
+					<option value="count_hit"> Hits </option>
+					<option value="published"> Publish Date</option>
+					<option value="relevance"> Relevance </option>
+				</select>
+			</div>
+			<div id="numres"></div>
+			<div id="output"></div>
+		</div>
 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="main.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="main.js"></script>
+	</body>
 
-</body>
-
-<footer class="center">
-    <h6>Copyright (c) 2018 Brock Balducci. All rights reserved.</h6>
-</footer>
+	<footer class="text-center bg-dark w-100 p-2 mt-2">
+		<h6 class="text-light my-auto">
+			Copyright (c) 2018 Brock Balducci. All rights reserved.
+		</h6>
+	</footer>
 </html>
