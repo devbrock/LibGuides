@@ -1,10 +1,12 @@
 # LibGuides
 
-### Practical Web Development Test
+## Practical Web Development Test
 
 This application makes use of Mississippi State Library's LibGuides API, which includes built in functionality for filtering and searching through API endpoints. This application is written in HTML, vanilla JavaScript and JQUERY. An AJAX request is used to make the request to the LibGuides API and handle the response. Bootstrap version 4.3.1 is used for styling.
 
-## The application is fully responsive including XL, LG, MD and SM screens.
+The application is fully responsive including XL, LG, MD and SM screens.
+
+---
 
 If you are not sure what you are looking for, hit the `search` button without inputing any other data to browse through all the guides available.
 
